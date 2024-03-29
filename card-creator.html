@@ -11,7 +11,32 @@
 <body>
   <main class="left-right">
     <section id="form-area">
-      <!-- YOUR CODE HERE -->
+      <form class="card-form">
+        <div class="form-group">
+          <label for="to">To:</label>
+          <input type="text" id="to" name="to" placeholder="Recipient's Name">
+        </div>
+        <div class="form-group">
+          <label for="from">From:</label>
+          <input type="text" id="from" name="from" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" placeholder="Title of the Card">
+        </div>
+        <div class="form-group">
+          <label for="subtitle">Subtitle:</label>
+          <input type="text" id="subtitle" name="subtitle" placeholder="Subtitle of the Card">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+        <div class="form-buttons">
+          <button type="button" id="preview-btn">Preview</button>
+          <button type="submit" id="save-btn">Save</button>
+        </div>
+      </form>
     </section>
     <section id="preview-area">
       <div class="card-display">
@@ -21,13 +46,14 @@
         </div>
         <div class="card-page page-two">
           <div class="to">Dear <span class="to-text">RECIPIENT</span>,</div>
-          <div class="message"><span class="message-text">YOUR MESSAGE HERE</span></div>
+          <div class="message"><span class="message-text">MESSAGE</span></div>
           <div class="from">Sincerely, <span class="from-text">SENDER</span></div>
         </div>
       </div>
     </section>
   </main>
-  <script src="scripts/createcard.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/viewcards.js"></script>
 </body>
 
 </html>
